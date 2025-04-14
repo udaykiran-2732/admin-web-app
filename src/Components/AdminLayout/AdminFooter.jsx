@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear();
     <>
            <div className="admindash_footer">
             <span>
-            {translate("Copyright")} {currentYear} {systemsettings?.company_name} {translate("All Rights Reserved")}
+            {translate("Copyright")} {currentYear} Horizon Collabration {translate("All Rights Reserved")}
             </span>
            </div>
     </>

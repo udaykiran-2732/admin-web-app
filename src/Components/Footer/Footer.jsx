@@ -38,8 +38,8 @@ const Footer = () => {
                                         </div>
                                         <div className="footer_contactus_deatils">
                                             <span className="footer_span">{translate("email")}</span>
-                                            <a href={`mailto:${webdata && webdata.company_email}`}>
-                                                <span className="footer_span_value">{webdata && webdata.company_email}</span>
+                                            <a href="mailto:adminn@horizoncollabration.in">
+                                                <span className="footer_span_value">adminn@horizoncollabration.in</span>
                                             </a>
                                         </div>
                                     </div>
@@ -167,14 +167,14 @@ const Footer = () => {
                             <div className="download_app_platforms">
                                 {webdata?.playstore_id ? (
                                     <div id="playstore_logo">
-                                        <a href={webdata?.playstore_id} target="_blank">
+                                        <a href="https://play.google.com" target="_blank">
                                             <Image loading="lazy" src={playstore?.src} alt="no_img" className="platforms_imgs" width={0} height={0} style={{ width: "100%", height: "100%" }} onError={placeholderImage} />
                                         </a>
                                     </div>
                                 ) : null}
                                 {webdata?.appstore_id ? (
                                     <div id="appstore_logo">
-                                        <a href={webdata?.appstore_id} target="_blank">
+                                        <a href="https://apple.com" target="_blank">
                                             <Image loading="lazy" src={appstore?.src} alt="no_img" className="platforms_imgs" width={0} height={0} style={{ width: "100%", height: "100%" }} onError={placeholderImage} />
                                         </a>
                                     </div>
