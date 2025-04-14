@@ -189,7 +189,7 @@ const Footer = () => {
                 <div className="footer container">
 
                     <div>
-                        <h6>{translate("Copyright")} {currentYear} {webdata?.company_name} {translate("All Rights Reserved")}</h6>
+                        <h6>{translate("Copyright")} {currentYear} Horizon Collabration {translate("All Rights Reserved")}</h6>
                     </div>
                     <div>
                         {webdata?.facebook_id || webdata?.instagram_id || webdata?.youtube_id || webdata?.twitter_id ? (
