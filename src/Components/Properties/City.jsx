@@ -232,14 +232,13 @@ const City = () => {
                       {isLoading
                         ? // Show skeleton loading when data is being fetched
                           Array.from({ length: 8 }).map((_, index) => (
-                            <div className="col-sm-12  loading_data">
+                            <div className="col-sm-12  loading_data" key={index}>
                               <CustomHorizontalSkeleton />
                             </div>
                           ))
                         : CategoryListByPropertyData.map((ele) => (
                             <Link
-                              href="/properties-details/[slug]"
-                              as={`/properties-details/${ele.slug_id}`}
+                              href={`/properties-details/${ele.slug_id}`}
                               passHref
                               key={ele.slug_id}
                             >
@@ -257,8 +256,7 @@ const City = () => {
                             key={ele.slug_id}
                           >
                             <Link
-                              href="/properties-details/[slug]"
-                              as={`/properties-details/${ele.slug_id}`}
+                              href={`/properties-details/${ele.slug_id}`}
                               passHref
                             >
                               <VerticalCard ele={ele} />

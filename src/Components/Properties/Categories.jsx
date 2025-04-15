@@ -280,9 +280,9 @@ const Categories = () => {
                             ))
                           : CategoryListByPropertyData.map((ele) => (
                               <Link
-                                href="/properties-details/[slug]"
-                                as={`/properties-details/${ele.slug_id}`}
+                                href={`/properties-details/${ele.slug_id}`}
                                 passHref
+                                key={ele.id}
                               >
                                 <AllPropertieCard ele={ele} />
                               </Link>
@@ -297,8 +297,7 @@ const Categories = () => {
                               key={index}
                             >
                               <Link
-                                href="/properties-details/[slug]"
-                                as={`/properties-details/${ele.slug_id}`}
+                                href={`/properties-details/${ele.slug_id}`}
                                 passHref
                               >
                                 <VerticalCard ele={ele} />
